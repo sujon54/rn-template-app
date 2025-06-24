@@ -2,6 +2,26 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 # Getting Started
 
+# React Native Starter Template 🚀
+
+A clean, customizable React Native starter template with:
+
+- React Navigation
+- Redux Toolkit
+- Axios for API
+- Pre-styled `ToolBar` & `HomeScreen`
+- Vector icons preconfigured
+
+## 📦 Usage
+
+```bash
+git clone https://github.com/sujon54/rn-template-app.git TemplateApp
+cd TemplateApp
+npx react-native-rename "yourAppName" -b com.mycompany.myapp
+npm install
+npx react-native run-android
+
+
 > **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
 
 ## Step 1: Start Metro
