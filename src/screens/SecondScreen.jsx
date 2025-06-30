@@ -1,17 +1,16 @@
 import React from 'react';
-import { View, Text, StyleSheet, SafeAreaView, StatusBar, Platform } from 'react-native';
+import { View, Text, StyleSheet, SafeAreaView, StatusBar, Platform, Button } from 'react-native';
 import ToolBar from '../components/ToolBar';
 import { useNavigation } from '@react-navigation/native';
 
 const SecondScreen = () => {
-    const navigation = useNavigation();
+  const navigation = useNavigation();
   return (
     <SafeAreaView style={styles.safeArea}>
-      <StatusBar backgroundColor="#f2f2f2" barStyle="dark-content" />
 
-      <View style={styles.toolbarWrapper}>
+      {/* <View style={styles.toolbarWrapper}>
         <ToolBar onBackPress={() => navigation.goBack()} title="Second Screen" />
-      </View>
+      </View> */}
 
       <View style={styles.container}>
         <Text style={styles.title}>🚀 You’re on the second screen!</Text>

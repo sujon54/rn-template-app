@@ -17,7 +17,7 @@ export default function ToolBar({onBackPress, title}){
                         styles.btn
                       ]} 
                     > 
-                      <Icon name="arrow-left" color={'#000'} size={20}/>
+                      <Icon name="arrow-left" color={'black'} size={20}/>
                     </Pressable> 
                 : null
             }

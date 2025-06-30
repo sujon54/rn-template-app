@@ -2,32 +2,32 @@ import React from 'react';
 import { View, Text, StyleSheet, SafeAreaView, StatusBar, Button } from 'react-native';
 import ToolBar from '../components/ToolBar';
 import { useNavigation } from '@react-navigation/native';
+import { useSelector } from 'react-redux';
 
 const HomeScreen = () => {
-    const navigation = useNavigation();
+  const navigation = useNavigation();
+  const store = useSelector((state) => state.user);
   const goToSecondScreen = () => {
     navigation.navigate('SecondScreen');
   };
   return (
     <SafeAreaView style={styles.safeArea}>
-      <StatusBar backgroundColor="#f2f2f2" barStyle="dark-content" />
-
-      <View style={styles.toolbarWrapper}>
-        <ToolBar title="Home" />
-      </View>
       <View style={styles.container}>
-        <Text style={styles.title}>Welcome 👋</Text>
+        <Text style={styles.title}>Welcome {store.name}</Text>
         <Text style={styles.subtitle}>This is your starter React Native template app.</Text>
-        <View style={{marginTop: 20}}>
+        <View style={{ marginTop: 20 }}>
           <Button title="Go to Second Screen" onPress={goToSecondScreen} />
         </View>
+          <View style={{ marginTop: 20 }}>
+            <Button title="Go to Login Screen" onPress={() => navigation.navigate('Login')} />
+          </View>
       </View>
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
-safeArea: {
+  safeArea: {
     flex: 1,
     backgroundColor: '#f2f2f2',
   },
