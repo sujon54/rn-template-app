@@ -6,6 +6,15 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 ## Step 1: Start Metro
 
+### How to Start
+
+```bash
+git clone https://github.com/sujon54/rn-template-app.git TemplateApp
+cd TemplateApp
+npx react-native-rename "YourAppName" -b com.yourcompany.myappname
+npm install
+npx react-native run-android
+
 First, you will need to run **Metro**, the JavaScript build tool for React Native.
 
 To start the Metro dev server, run the following command from the root of your React Native project:
